@@ -44,7 +44,7 @@ $(document).ready(function(){
         .then(function(response){
             let results = response.data;
 
-            for (var i = 0; i < results.lenth; i++){
+            for (var i = 0; i < results.length; i++){
                 let heroDiv = $("<div class=\"hero-item\">");
 
                 let rating = results[i].rating;
@@ -63,9 +63,6 @@ $(document).ready(function(){
                 heroDiv.append(heroImage);
 
                 $("#images").append(heroDiv);
-
-
-
             }
         });
         });

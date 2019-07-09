@@ -44,6 +44,13 @@ $(document).ready(function(){
                 let p = $("<p>").text("Rating: " + rating);
                 let animated = results[i].images.fixed_height.url;
                 let still = results[i].images.fixed_height.url;
+                let heroImage = $("<img>");
+                heroImage.attr("src", still);
+                heroImage.attr("data-still", still);
+                heroImage.attr("data-animate", animated);
+                heroImage.attr("data-state", "still");
+                heroImage.addClass("hero-image");
+                
             }
         })
         }))
